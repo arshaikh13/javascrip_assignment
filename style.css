@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+}
+
+nav{
+    height: 60px;
+    width: 100%;
+    background-color: dodgerblue;
+    position: fixed;
+
+}
+
+.menuIcon{
+    height: 100%;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+
+.bar{
+    height: 6px;
+    width: 80%;
+    background-color: black;
+}
+
+.menu{
+    position: fixed;
+    top: 60px;
+    right: -150px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: black;
+    background-color: lightgray;
+    min-height: 150px;
+    transition: 0.125s;
+    z-index: 99;
+}
+
+.wrapper2 {
+    background-color: lightgray;
+    position: relative;
+    top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+p{
+    font-size: 40px;
+    color: white;
+}
+
+h2{
+    font-size: 20px;
+}
+
+.imgdiv{
+    height: 200px;
+    position: relative;
+    top: 60px;
+    width: 100%;
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://t3.ftcdn.net/jpg/02/61/67/14/360_F_261671422_MOJX6VsX6rZd6zlJ2FONkyjsCRElhhxt.jpg");
+}
+
+.wrapper1{
+    background-color: lightgray;
+    position: relative;
+    top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+img{
+    height: 200px;
+    width: 220px;
+    margin: 15px;
+}
+
+.foot2{
+    position: relative;
+    top: 60px;
+    height: 40px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media screen and (min-width: 800px) {
+    .menu{
+        position: fixed;
+        top: -50px;
+        left: 20px;
+        background-color:transparent;
+        flex-direction: row;
+        justify-content: space-around;
+        z-index: 99;
+
+    }
+
+    .bar{
+        background-color: transparent;
+    }
+}
+
